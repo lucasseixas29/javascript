@@ -1,0 +1,25 @@
+string para number usa >> number( loremlorem)
+			  Number.parseInt( loremlorem ) = números inteiros
+                          Number.parseFloat( loremlorem ) = números com decimal 
+number para string usa >> string ou n.to string (numero)
+
+toUpperCase() = leltras maiúsculas
+toLowerCase() = letras minúsculas
+.length = quantidade de caracters
+
+toLocaleString('pt-BR', {style: 'currency
+', currency: 'BRL'})
+
+N =10 ; N = N +5 = 15; OU N+=5 = 15;
+
+Negação - !
+Conjunção - &&
+Disjunção - ||
+
+PRECEDÊNCIA
+
+() ** / * %
+> < >= <= == !=
+!
+&&
+||
