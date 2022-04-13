@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio009</title>
+
+    <style>
+        body{
+
+            background-color: lightgoldenrodyellow;
+            color: gray;
+            font: normal 18pt Arial
+        }
+        div#res{
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Sistema de reconhecimento de cidadania</h2>
+
+    Você nasceu em qual país?: <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id="res"></div>
+    
+    <script>
+        function analisar() {
+    var país = document.getElementById('txtn1')
+    var res = document.getElementById('res')
+
+
+        if(país.value == 'Brasil') {
+        res.innerHTML+= `Você mora No(a) ${país.value} <br/>`
+        res.innerHTML+= 'Você é brasileiro!'
+        } else { res.innerHTML+= `Você mora No(a) ${país.value} <br/>`
+            res.innerHTML+= "você é estrangeiro"}
+    }
+        
+
+
+
+    </script>
+
+</body>
+</html>
