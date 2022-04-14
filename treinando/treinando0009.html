@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+
+        input{
+
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contador de Cliques</h2>
+
+    <input type="button" value="Clique em mim" onclick="contar()">
+    <input type="button" value="Zerar o contador" onclick="zerar()">
+    <section id="result">O contador está com <mark>0</mark> cliques.</section>
+    
+
+
+    <script>
+        var contador = 0
+        var res = document.getElementById('result')
+        function contar() {
+
+            contador++
+            res.innerHTML=`<p>O contador está com <mark> ${contador}</mark>cliques.</p>`
+        }
+        function zerar() {
+            contador = 0
+            res.innerHTML= null
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+
+        body{
+            background-color: rgb(237, 74, 74);
+            color: white;
+        }
+
+        input{
+            padding: 40px;
+        }
+        div{ margin-top: 20px;
+            font-size: 18pt;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>
+    Trabalhando com Dados 2 versão
+    </h2>
+
+    <input type="button" value="Clique aqui para começar" id="aqui" onclick="clique()">
+    <div id="res"></div>
+    
+    <script>
+        function clique() {
+            var res = document.getElementById
+            ('res')
+            var nome = prompt('Qual o seu nome?')
+
+            res.innerHTML =`Olá, ${nome} prazer em te conhecer!`
+           
+            
+        
+        }
+
+
+    </script>
+</body>
+</html>
